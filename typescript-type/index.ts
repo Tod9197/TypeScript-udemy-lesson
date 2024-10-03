@@ -33,3 +33,30 @@ const coffee = {
 coffee.size = CoffeeSize.TALL;
 
 console.log(CoffeeSize.TALL);
+
+let anything: any = true;
+anything = "hello";
+anything = 1;
+
+let banana = "banana";
+banana = anything;
+
+let unionType: number | string = 10;
+unionType = "hello";
+unionType.toUpperCase();
+
+type ClothSize = "small" | "medium" | "large";
+const apple = "apple";
+let clothSize: ClothSize = "small";
+
+const cloth: {
+  color: string;
+  size: "small" | "medium" | "large";
+} = {
+  color: "white",
+  size: "medium",
+};
+
+function add(num1: number, num2: number): number {
+  return num1 + num2;
+}
