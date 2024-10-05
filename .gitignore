@@ -1,0 +1,17 @@
+# TypeScript build output
+/dist
+/build
+/*.js
+/*.js.map
+
+# TypeScript specific
+*.tsbuildinfo
+*.d.ts
+*.d.ts.map
+
+# Ignore specific diagnostic or lib files if they're generated
+lib.es*
+diagnosticMessages.*
+
+# Node modules
+node_modules
